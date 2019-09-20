@@ -1,0 +1,22 @@
+
+.flex-parent{
+  border: 1px solid black;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.flex-start{
+  width:10%;
+  display: inline-block;
+}
+.flex-middle{
+  width:80%;
+  display: inline-block;
+}
+.flex-end{
+  /* align-content: space-between; */
+  width:10%;
+  display: inline-block;
+}

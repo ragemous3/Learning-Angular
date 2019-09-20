@@ -1,0 +1,16 @@
+
+<mat-card fxLayout="row wrap"gdAlignRows="center" fxLayoutAlign="space-between center wrap" style=" min-height: 40%; max-width:30%">
+  <h1 i18n="@@loginheader" class="mat-h1">Inlogg</h1>
+   <form class="form-placeholder" [formGroup]="loginForm" (ngSubmit)="login()">
+<mat-form-field>
+    <input class="input" matInput [formControl]="username" name="username" id="username" minLength="5" type="text" placeholder="Username" />
+</mat-form-field>
+<mat-form-field>
+    <input class="input" matInput [formControl]="password" name="password" id="password" minLength="5" class="password"  placeholder="Password" required />
+</mat-form-field>
+<button mat-raised-button type="submit" class="input">Log in</button>
+  </form>
+  <div fxLayout="col wrap" class="body-2">
+    <button mat-raised-button style="color:green; width:50%" i18n="@@create" routerLink="/create">Skapa nytt konto</button>
+  </div>
+</mat-card>

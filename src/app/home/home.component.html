@@ -1,0 +1,17 @@
+
+<div>
+  Welcome home boy.
+  <article class="adder-placeholder">
+    <p>posta ett inlägg!</p>
+    <textarea name="name" rows="8" cols="80" #inputData></textarea>
+  <button id="adder" (click)="addStuff(inputData.value)">add stuff</button>
+  </article>
+  <p>mark the one you want to remove from your page</p>
+    <app-textcomponent class="txt-placeholder" (inputParent)="input($event)"(toParent)="receiveMessage($event)" *ngFor="let post of textPosts"  #viewthis  [id]="post.id" [txt]="post.text">
+
+     </app-textcomponent>
+<button mat-raised-button id="updat-field" (click)="updateFieldList()">Generate Field</button>
+<button mat-raised-button id="remover" (click)="removeStuff()">Remove stuff</button>
+
+
+</div>

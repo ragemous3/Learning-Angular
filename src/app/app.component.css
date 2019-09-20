@@ -1,0 +1,14 @@
+
+.footer{
+  text-align:center
+}
+
+.button-like{
+  color: rgb(2, 184, 117);
+}
+.button-hate{
+  color: #FF3333;
+}
+.button-neutral{
+  color: #6666FF
+}
